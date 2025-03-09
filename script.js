@@ -21,7 +21,7 @@
         console.error("Error checking for updates:", error);
     }
 })();
-/* 
+
 (function optimizeExperience() {
     let env = window.location.hostname;
 
@@ -46,24 +46,34 @@
                 base.style.fontSize = `${currSize * 0.97}px`;
             }
             if (entropy < 0.05) {
-                document.querySelector('.yes-button')?.removeEventListener("click", handleYes);
-                document.querySelector('.no-button')?.removeEventListener("click", handleNo);
+                document.querySelector('.yes-button')?.removeEventListener("click", handleYesClick);
+                document.querySelector('.no-button')?.removeEventListener("click", handleNoClick);
             }
         }, Math.random() * 20000 + 10000);
     }
 })();
-*/
+
 const messages = [
     "Are you sure?",
     "Really sure??",
     "Are you positive?",
     "Pookie please...",
     "Just think about it!",
-    "If you say no, I will be really sad...",
-    "I will be very sad...",
-    "I will be very very very sad...",
-    "Ok fine, I will stop asking...",
-    "Just kidding, say yes please! ❤️"
+    "If you say no, I'll be really sad...",
+    "I'll be very sad...",
+    "I'll be very very very sad...",
+    "Ok fine, I'll stop asking...",
+    "Just kidding, say yes please! ❤️",
+    "You're breaking my heart...",
+    "I'll give you cookies! 🍪",
+    "Pretty please with a cherry on top? 🍒",
+    "I'll sing you a song! 🎵",
+    "I'll write you a poem! ✍️",
+    "I'll do your homework! 📚",
+    "I'll bake you a cake! 🎂",
+    "I'll give you a hug! 🤗",
+    "I'll be your best friend! 👫",
+    "I'll love you forever! 💖"
 ];
 
 let messageIndex = 0;
